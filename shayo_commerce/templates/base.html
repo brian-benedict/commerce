@@ -1,0 +1,238 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My E-Commerce Store{% endblock %}</title>
+    <!-- Include Bootstrap CSS -->
+
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+/* #productCarousel .carousel-inner {
+  position: relative;
+}
+
+.carousel-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel-item {
+  height: 250px; /* Set a fixed height for carousel items */
+
+
+/* .carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+  position: absolute;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.1); /* Scales the image up */
+  /* z-index: 2; Ensures the image is above the others */
+
+
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000; /* Adjust the color to match your design */
+  /* border-radius: 50%;
+  padding: 10px;
+} */
+
+/* Hide the controls when not hovered */
+/* #productCarousel:hover .carousel-control-prev-icon,
+#productCarousel:hover .carousel-control-next-icon {
+  display: block;
+} */
+
+/* #productCarousel .carousel-control-prev-icon,
+#productCarousel .carousel-control-next-icon {
+  display: none;
+} */ 
+
+
+
+
+
+
+
+
+
+
+
+
+.product-image {
+  border-radius: 30%;
+  overflow: hidden; /* Ensures the image doesn't bleed outside the border */
+  width: 120px; /* Or the width you desire */
+  height: 120px; /* Or the height you desire, should be equal to width for a perfect circle */
+  object-fit: cover; /* This makes sure that the image covers the area without stretching */
+  display: block; /* Change display to block to remove bottom space */
+  margin-left: auto; /* These two margins can center the image if needed */
+  margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer a.text-white:hover {
+    text-decoration: none;
+    color: #aaa; /* or any other color for hover state */
+}
+
+footer .newsletter-signup, footer .app-links {
+    margin-top: 20px; /* or any other spacing as needed */
+}
+
+/* Custom styles for buttons if needed */
+
+    </style>
+</head>
+<body class="bg-info" >
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My E-Commerce Store</a>
+        <!-- Add navigation links here -->
+    </nav>  
+    <div class="container bg-danger">
+
+
+        {% block content %}
+        {% endblock %}
+    </div>
+    <footer class="bg-dark text-white py-4">
+      <div class="container py-4">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>NEED HELP?</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Chat with us</a></li>
+                    <li><a href="#" class="text-white">Help Center</a></li>
+                    <li><a href="#" class="text-white">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>USEFUL LINKS</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Track Your Order</a></li>
+                    <li><a href="#" class="text-white">Shipping and delivery</a></li>
+                    <li><a href="#" class="text-white">Return Policy</a></li>
+                    <!-- ... other links ... -->
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>ABOUT SHAYO ELECTRONICS</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">About us</a></li>
+                    <li><a href="#" class="text-white">Shayo Electronics Careers</a></li>
+                    <li><a href="#" class="text-white">Shayo Electronics Express</a></li>
+                    <!-- ... other links ... -->
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>MAKE MONEY WITH SHAYO ELECTRONICS</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Sell on SHAYO ELECTRONICS</a></li>
+                    <li><a href="#" class="text-white">Become a Sales Consultant</a></li>
+                    <li><a href="#" class="text-white">Become a Logistics Service Partner</a></li>
+                    <!-- ... other links ... -->
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>SHAYO ELECTRONICS OFFICES</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Kenya</a></li>
+                    <li><a href="#" class="text-white">Tanzania</a></li>
+                    <li><a href="#" class="text-white">Uganda</a></li>
+                    <!-- ... other links ... -->
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <div class="newsletter-signup">
+                    <h5>NEW TO SHAYO ELECTRONICS?</h5>
+                    <p>Subscribe to our newsletter to get updates on our latest offers!</p>
+                    <form class="form-inline">
+                        <div class="form-group mx-sm-3 mb-2">
+                            <input type="email" class="form-control" placeholder="Enter E-mail Address">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2">SEND</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>JOIN US ON</h5>
+            <a href="https://www.facebook.com" class="text-white me-2">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" class="text-white me-2">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com" class="text-white me-2">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <h5>PAYMENT METHODS</h5>
+            <i class="bi bi-wallet2 me-2"></i>
+            <i class="bi bi-credit-card-2-front me-2"></i>
+            <!-- Substitute with actual logos for Visa, Mastercard, and Jumia Pay -->
+          </div>
+          <div class="col-md-4">
+            <h5>BRANDS</h5>
+            <!-- List of brands in a grid or inline layout -->
+            <div class="row">
+              <div class="col">
+                <p>Tecno</p>
+                <p>Infinix</p>
+                <p>Oppo</p>
+                <p>Google Pixel</p>
+                <!-- ... other brands ... -->
+              </div>
+              <div class="col">
+                <p>Samsung</p>
+                <p>Apple</p>
+                <p>Itel</p>
+                <p>Motorola</p>
+                <!-- ... other brands ... -->
+              </div>
+              <!-- ... more columns as needed ... -->
+            </div>
+          </div>
+        </div>
+      </div>
+</footer>
+
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

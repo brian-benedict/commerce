@@ -1,0 +1,283 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Navigation bar -->
+
+
+
+<!-- 0787908026 -->
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <!-- Add your logo here -->
+      <img src="{% static 'path/to/s.png' %}" alt="Logo" style="height: 40px;">
+      SHAYO ELECTRONICS
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- Search bar -->
+      <form class="d-flex mx-auto">
+        <input class="form-control me-2" type="search" placeholder="Search products, brands and categories" aria-label="Search">
+        <button class="btn btn-outline-dark" type="submit">Search</button>
+      </form>
+      <!-- Account, Help, Cart Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Account</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Cart <span class="badge bg-secondary">0</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+<!-- Main content area -->
+<div class="container mt-3">
+  <!-- Sidebar for categories -->
+  <div class="row">
+    <div class="col-md-3">
+      <div class="list-group">
+        <!-- Add your category links here -->
+        <a href="#" class="list-group-item list-group-item-action">Mobile Phones</a>
+        <!-- ... other categories ... -->
+      </div>
+      <div class="list-group">
+        <!-- Add your category links here -->
+        <a href="#" class="list-group-item list-group-item-action">Phone Chagers</a>
+        <!-- ... other categories ... -->
+      </div>
+      <div class="list-group">
+        <!-- Add your category links here -->
+        <a href="#" class="list-group-item list-group-item-action">Tablets</a>
+        <!-- ... other categories ... -->
+      </div>
+      <div class="list-group">
+        <!-- Add your category links here -->
+        <a href="#" class="list-group-item list-group-item-action">Button Phones</a>
+        <!-- ... other categories ... -->
+      </div>
+      <div class="list-group">
+        <!-- Add your category links here -->
+        <a href="#" class="list-group-item list-group-item-action">Covers</a>
+        <!-- ... other categories ... -->
+      </div>
+      <div class="list-group">
+        <!-- Add your category links here -->
+        <a href="#" class="list-group-item list-group-item-action">Screen Protector</a>
+        <!-- ... other categories ... -->
+      </div>
+    </div>
+    <!-- Featured products or promotions -->
+    <div class="col-md-9">
+      <!-- Add your main content here -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="{% static 'path/to/caro.jpg' %}" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{% static 'path/to/caroo.jpg' %}" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{% static 'path/to/carooo.jpg' %}" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- ... more content ... -->
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- awesrdtfyghjkljhgfd -->
+<div class="container mt-3">
+    <div class="row">
+
+  </div>
+<div class="card">
+
+<div class="row mt-3">    
+    <div class="col-md-3 mb-4">
+
+            <img src="{% static 'path/to/FlashSale.png' %}"  class="product-image" alt="">
+            <div class="card-body">
+                <h5 class="card-title text-center">Flash Sales</h5>
+            </div>
+    </div>
+    <div class="col-md-3 mb-4">
+
+            <img src="{% static 'path/to/ClearanceSale.png' %}"  class="product-image" alt="">
+            <div class="card-body">
+                <h5 class="card-title text-center">Clerance</h5>
+            </div>
+    </div>
+    <div class="col-md-3 mb-4">
+
+            <img src="{% static 'path/to/Computing.png' %}"  class="product-image" alt="">
+            <div class="card-body">
+                <h5 class="card-title text-center">Coomputing</h5>
+            </div>
+    </div>
+    <div class="col-md-3 mb-4">
+
+            <img src="{% static 'path/to/Smartphones.png' %}"  class="product-image" alt="">
+            <div class="card-body">
+                <h5 class="card-title text-center">Smmartphones</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-12">
+      <h2>Home Appliances</h2>
+      <a href="#" class="float-right">SEE ALL</a>
+    </div>
+  </div>
+<div class="row">
+    {% for product in products %}
+    <div class="col-md-3 mb-4">
+        <div class="card">
+            <img src="{{ product.image.url }}"  class="product-image" alt="{{ product.title }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ product.title }}</h5>
+                <p class="card-text">{{ product.description }}</p>
+            </div>
+            <div class="card-footer">
+                <span class="float-left">${{ product.price }}</span>
+                <a href="{% url 'product_detail' product_id=product.id %}" class="btn btn-primary float-right">View Details</a>
+            </div>
+        </div>
+    </div>
+    {% if forloop.counter|divisibleby:4 and not forloop.last %}
+</div>
+<div class="row">
+    {% endif %}
+    {% endfor %}
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-12">
+      <h2>Home Appliances</h2>
+      <a href="#" class="float-right">SEE ALL</a>
+    </div>
+  </div>
+<div class="row">
+    {% for product in products %}
+    <div class="col-md-3 mb-4">
+        <div class="card">
+            <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.title }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ product.title }}</h5>
+                <p class="card-text">{{ product.description }}</p>
+            </div>
+            <div class="card-footer">
+                <span class="float-left">${{ product.price }}</span>
+                <a href="{% url 'product_detail' product_id=product.id %}" class="btn btn-primary float-right">View Details</a>
+            </div>
+        </div>
+    </div>
+    {% if forloop.counter|divisibleby:4 and not forloop.last %}
+</div>
+<div class="row">
+    {% endif %}
+    {% endfor %}
+</div>
+</div>
+
+
+
+
+
+<!-- Footer -->
+<footer class="text-white bg-dark">
+
+</footer>
+
+      
+
+
+
+
+
+<!-- <script>
+  var myCarousel = document.querySelector('#categoryCarousel')
+  var carousel = new bootstrap.Carousel(myCarousel)
+</script> -->
+
+{% endblock %}
+
